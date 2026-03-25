@@ -14,7 +14,7 @@ export const projects: Project[] = [
     year: "2026",
     image: "https://images.squarespace-cdn.com/content/v1/6420a892a385a36f8cfc94cc/76b24a20-fdbb-482c-922c-fc7929146653/IMG_3945.jpg",
     slug: "fsae-chassis-development",
-    description: "Designed, analyzed, and manufactured the Q26 tubular steel chassis, performing torsional stiffness and deflection analysis in Ansys to ensure compliance with safety and performance requirements.",
+    description: "Designed, analyzed, and manufactured the Q26 tubular steel chassis, performing torsional stiffness and deflection analysis in ANSYS to ensure compliance with safety and performance requirements.",
     details: [
       "Developed custom aluminum rail profiles for low-friction guidance",
       "Integrated adjustable roller assemblies for alignment tuning",
