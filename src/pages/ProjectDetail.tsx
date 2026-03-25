@@ -1,12 +1,16 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 import { projects } from "@/data/projects";
 
 const ProjectDetail = () => {
   const { slug } = useParams<{ slug: string }>();
-  const project = projects.find((p) => p.slug === slug);
+  const currentIndex = projects.findIndex((p) => p.slug === slug);
+  const project = currentIndex >= 0 ? projects[currentIndex] : null;
+  const prevProject = currentIndex > 0 ? projects[currentIndex - 1] : null;
+  const nextProject = currentIndex < projects.length - 1 ? projects[currentIndex + 1] : null;
 
   if (!project) {
     return (
@@ -82,7 +86,43 @@ const ProjectDetail = () => {
           </>
         )}
       </div>
+
+      {/* Prev / Next Navigation */}
+      {(prevProject || nextProject) && (
+        <div className="px-6 md:px-12 lg:px-24 pb-16 md:pb-24">
+          <div className="flex items-start justify-between gap-8">
+            {prevProject ? (
+              <Link
+                to={`/projects/${prevProject.slug}`}
+                className="group flex items-start gap-3 max-w-[45%]"
+              >
+                <ChevronLeft className="w-8 h-8 text-primary shrink-0 mt-2 group-hover:opacity-70 transition-opacity" />
+                <h3 className="text-primary text-xl md:text-3xl font-bold leading-tight group-hover:opacity-70 transition-opacity">
+                  {prevProject.title} ({prevProject.year})
+                </h3>
+              </Link>
+            ) : (
+              <div />
+            )}
+            {nextProject ? (
+              <Link
+                to={`/projects/${nextProject.slug}`}
+                className="group flex items-start gap-3 max-w-[45%] text-right ml-auto"
+              >
+                <h3 className="text-primary text-xl md:text-3xl font-bold leading-tight group-hover:opacity-70 transition-opacity">
+                  {nextProject.title} ({nextProject.year})
+                </h3>
+                <ChevronRight className="w-8 h-8 text-primary shrink-0 mt-2 group-hover:opacity-70 transition-opacity" />
+              </Link>
+            ) : (
+              <div />
+            )}
+          </div>
+        </div>
+      )}
+
       <Footer />
+      <BackToTop />
     </div>
   );
 };
