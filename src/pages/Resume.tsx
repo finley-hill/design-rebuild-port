@@ -141,6 +141,7 @@ const Resume = () => {
         </section>
       </div>
       <Footer />
+      <BackToTop />
     </div>
   );
 };
