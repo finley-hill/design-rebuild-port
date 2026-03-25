@@ -23,7 +23,7 @@ const Navbar = () => {
         </div>
       </div>
       <a
-        href="https://www.linkedin.com/in/markwashington"
+        href="https://www.linkedin.com/in/finley-hill"
         target="_blank"
         rel="noopener noreferrer"
         className="text-primary hover:opacity-70 transition-opacity"
