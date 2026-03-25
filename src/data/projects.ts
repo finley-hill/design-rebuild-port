@@ -10,11 +10,11 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Linear Motor Guidance System",
-    year: "2024",
+    title: "FSAE Space Frame Chassis Development",
+    year: "2026",
     image: "https://images.squarespace-cdn.com/content/v1/6420a892a385a36f8cfc94cc/76b24a20-fdbb-482c-922c-fc7929146653/IMG_3945.jpg",
-    slug: "linear-motor-guidance-system",
-    description: "Designed and manufactured a precision guidance system for a linear induction motor, ensuring smooth and stable travel along the track.",
+    slug: "fsae-chassis-development",
+    description: "Designed, analyzed, and manufactured the Q26 tubular steel chassis, performing torsional stiffness and deflection analysis in Ansys to ensure compliance with safety and performance requirements.",
     details: [
       "Developed custom aluminum rail profiles for low-friction guidance",
       "Integrated adjustable roller assemblies for alignment tuning",
@@ -26,16 +26,16 @@ export const projects: Project[] = [
     ],
   },
   {
-    title: "Carbon Fiber Hyperloop Monocoque",
-    year: "2024",
+    title: "High-Speed Component Feeding System – ATS Life Sciences",
+    year: "2025",
     image: "https://images.squarespace-cdn.com/content/v1/6420a892a385a36f8cfc94cc/1720497513217-6XCX9OHSYLPOVC025NP7/IMG_9745.jpg",
-    slug: "carbon-fiber-hyperloop-frame",
-    description: "Led the design and fabrication of a carbon fiber monocoque shell for a hyperloop pod competition vehicle.",
+    slug: "component-feeding-system",
+    description: "Designed and developed a high-speed automated component feeding system achieving 200+ parts/min throughput for ATS Life Sciences’ Symphoni™ platform.",
     details: [
-      "Designed monocoque structure using composite layup analysis",
-      "Managed wet layup and vacuum bagging manufacturing process",
-      "Achieved 40% weight reduction compared to previous aluminum frame",
-      "Integrated mounting points for all subsystems within the shell",
+      "Engineered a hybrid material handling solution integrating a planar motor system, conveyor, and SCARA robot for precise pallet transport, orientation, and unloading",
+      "Developed a modular 16-part pallet system with precision alignment features, improving part density, repeatability, and cleanroom compatibility",
+      "Validated system performance through timing analysis and motion simulation, ensuring synchronized operation with fixed robot pick sequences",
+      "Reduced mechanical contact and footprint while improving scalability, accessibility, and reconfigurability compared to traditional puck-based systems",
     ],
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/6420a892a385a36f8cfc94cc/1720497513217-6XCX9OHSYLPOVC025NP7/IMG_9745.jpg",
