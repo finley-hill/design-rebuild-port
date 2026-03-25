@@ -7,6 +7,7 @@ import Index from "./pages/Index.tsx";
 import Resume from "./pages/Resume.tsx";
 import ProjectDetail from "./pages/ProjectDetail.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import ScrollToTop from "./components/ScrollToTop.tsx";
 
 const queryClient = new QueryClient();
 
