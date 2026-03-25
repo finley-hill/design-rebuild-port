@@ -10,14 +10,14 @@ const Footer = () => {
         </p>
         <div className="flex items-center gap-6">
           <a
-            href="mailto:mark@markwashington.ca"
+            href="mailto:finleycooperhill@gmail.com"
             className="inline-flex items-center gap-2 border border-current px-6 py-3 text-sm font-medium hover:opacity-70 transition-all duration-300"
           >
             <Mail className="w-4 h-4" />
             Email Me
           </a>
           <a
-            href="https://www.linkedin.com/in/markwashington"
+            href="https://www.linkedin.com/in/finley-hill"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-medium hover:opacity-70 transition-opacity"
@@ -27,7 +27,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="opacity-40 text-xs mt-12">
-          © {new Date().getFullYear()} Mark Washington. All rights reserved.
+          © {new Date().getFullYear()} Finley Hill. All rights reserved.
         </p>
       </div>
     </footer>
